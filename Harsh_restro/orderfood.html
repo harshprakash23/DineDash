@@ -1,0 +1,184 @@
+<html>
+<head>
+	<title>Order</title>
+	<link rel="stylesheet" type="text/css" href="orderfood.css">
+	
+	<script src="orderfood.js"></script>
+</head>
+<body>
+	<!-- <div class="login"></div> -->
+				<main>
+						 <div class="zomatohead">
+								<img src="img\bg-hero.jpg">
+								<p class="zomatowrd"></p>
+								<input class="inputtxt" id="txt1" type="search" placeholder="Search for restaurant,cuisine or a dish"></input>
+								<button onclick="show()" class="btn">search</button> 
+							</img>
+						</div>
+								
+				</main>
+		
+				
+				<main3 id="main3">
+						<div class="tblrestrodetail"></div>
+
+						<div  class="tblrestrodetail1"><img id="cb0" src="img\chickenbiryani3.jpg"></div>
+						<div class="tblrestrodetail2"><img id="cb1" src="img\chickenbiryani2.jpg"></div>
+						<div class="tblrestrodetail3"><img id="cb2" src="img\chickenbiryaniimg1.jpg"></div>
+
+						<div class="tblrestrobottom">
+							<p><font id="dishname" size="6px">Chicken Hyderabadi</font></p>
+						</div>
+						<div class="tblrestrobottom1"></div>
+						<div class="tblrestrobottomrating2"><div class="rating1"><img src="img/rating1.png"><p class="ratingnum">39</p><p class="ratingdinig"><u>Dining-Rating</u></p></div></div>
+						<div class="tblrestrobottomrating3"><div class="rating2"><img src="img/rating2.png"><p class="rating2num">41</p><p class="rating2dinig">Delivery-Rating</p></div></div>
+
+						<div class="tblrestrofooddetail"><font id="hoteldis" size="4px">Biryani, Hyderabadi, Kebab, North Indian, Ice Cream, Desserts</font></div>
+						<div class="tblrestroaddres"><p><font id="adrss" size="5px">Unit 1, 4th Floor, Bindal Mall, Marine Drive, Sonari, Jamshedpur</font></p></div>
+
+				<div class="tblrestrorating4">	</div>
+				</main3>
+
+
+
+
+				<main4 id="main4">
+
+						<div class="menuhead"></div>
+						<div class="menuhead2">
+							<p id="hotelname" class="cuisine">THE ITALIAN CUISINE</p>
+						</div>
+						<div class="menuhead3"></div>
+					
+						<div class="menuhead4">
+							<div class="menuflex-container">
+								<div id="c0" class="menuflex-item" onclick="con(0)"><p  onclick="dsrt()">Desserts</p></div>
+								<div id="c1" class="menuflex-item" onclick="con(1)"><p  onclick="pza()">Pizza</p></div>
+								<div id="c2" class="menuflex-item" onclick="con(2)"><p  onclick="pasta()">Pasta</p></div>
+								<div id="c3" class="menuflex-item" onclick="con(3)"><p  onclick="itmcour()">Italian Main Course</p></div>
+							</div>
+						</div>
+						<div class="menuhead5">
+								 <div class="container">
+									<div class="card">
+										<div ><img id="cardimg0" class="titleborder" src="img/cardimage1.jpg" >
+											<h3 class="menufoodname"><p id="foodname0">cake</p>    <p id="fdprice0">390</p><br><button  onclick="minus(0)" class="menubutnminus">−</button>
+										  <input  id="cd0" id="txt" class="menubutninput" type="text" value="0"></input><button onclick="plus(0)"  class="menubutnplus">+</button></h3></div>
+									  </div>
+			  
+									  <div class="card">
+										  <div ><img id="cardimg1" class="titleborder" src="img/cardimage2.jpg">
+											<h3 class="menufoodname"><p id="foodname1">chocolate</p> <p id="fdprice1">625</p><br><button onclick="minus(1)" class="menubutnminus">−</button>
+											  <input id="cd1" class="menubutninput" type="text" value="0"></input><button onclick="plus(1)" class="menubutnplus">+</button></h3></div>
+						  
+									  </div>
+			  
+									  <div class="card">
+										  <div ><img id="cardimg2" class="titleborder" src="img/cardimage3.jpg">
+											<h3 class="menufoodname"><p id="foodname2">Chicken</p> <p id="fdprice2">540</p><br><button onclick="minus(2)" class="menubutnminus">−</button>
+											  <input id="cd2" class="menubutninput" type="text" value="0"></input><button onclick="plus(2)" class="menubutnplus">+</button></h3></div>
+									  </div>
+			  
+									  <div class="card">
+										  <div ><img id="cardimg3" class="titleborder" src="img/cardimage4.jpg">
+											<h3 class="menufoodname"><p id="foodname3">chicken rice</p>  <p id="fdprice3">360</p><br><button onclick="minus(3)" class="menubutnminus">−</button>
+											  <input id="cd3" class="menubutninput" type="text" value="0"></input><button onclick="plus(3)"    class="menubutnplus">+</button></h3></div>
+									  </div>
+			  
+									  <div class="card">
+										  <div ><img id="cardimg4" class="titleborder" src="img/cardimage5.jpg">
+											<h3 class="menufoodname"><p id="foodname4">tandoor</p>  <p id="fdprice4">360</p><br><button onclick="minus(4)" class="menubutnminus">−</button>
+											  <input id="cd4" class="menubutninput" type="text" value="0"></input><button onclick="plus(4)" class="menubutnplus">+</button></h3></div>
+									  </div>
+								 </div>
+						</div>
+						<div class="menuhead6" onclick="placeorder()"><h3 class="placeorder">PLACE ORDER</h3></div>
+						
+				</main4>
+				
+
+				<main5  id="main5">
+					<div class="menuside1"></div>
+					<div class="menutotal">
+						<table class="tblmenu" border="2px">
+							<th width="500px" align-item="Center">Food Item</th>
+							<th width="230px">Quantity</th>
+							<th width="230px">Price</th>
+
+						<tr>
+							<td height="25px" id="f0"></td>
+							<td height="25px" id="q0"></td>
+							<td height="25px" id="p0"></td>
+						</tr>
+							<tr>
+								<td height="25px" id="f1"></td>
+								<td height="25px" id="q1"></td>
+								<td height="25px" id="p1"></td>
+							</tr>
+							<tr>
+								<td height="25px" id="f2"></td>
+								<td height="25px" id="q2"></td>
+								<td height="25px" id="p2"></td>
+							</tr>
+							<tr>
+								<td height="25px" id="f3"></td>
+								<td height="25px" id="q3"></td>
+								<td height="25px" id="p3"></td>
+							</tr>
+							<tr>
+								<td height="25px" id="f4"></td>
+								<td height="25px" id="q4"></td>
+								<td height="25px" id="p4"></td>
+							</tr>
+							<tr>
+								<td height="25px">TOTAL</td>
+								<td height="25px"></td>
+								<td height="25px" id="tot"></td>
+							</tr>
+							
+						</table>
+					</div>
+				</main5>
+				
+				<main6>
+						<div class="zomatolast1">
+							<div class="zomato-footer">
+								<div class="footer-content">
+									<div class="footer-section">
+										<h2>Company</h2>
+										<a href="#">About Us</a>
+										<a href="#">Careers</a>
+										<a href="#">Press Center</a>
+										<a href="#">Contact Us</a>
+									</div>
+									<div class="footer-section">
+										<h2>Explore</h2>
+										<a href="#">Find a Restaurant</a>
+										<a href="#">Order Online</a>
+										<a href="#">Zomato Gold</a>
+										<a href="#">Zomato Pro</a>
+									</div>
+									<div class="footer-section">
+										<h2>Community</h2>
+										<a href="#">Help Center</a>
+										<a href="#">Blog</a>
+										<a href="#">Zomato for Business</a>
+										<a href="#">Zomato for Developers</a>
+									</div>
+									<div class="footer-section">
+										<h2>Follow Us</h2>
+										<a href="#"><img src="img/facebook.png" alt="Facebook"></a>
+										<a href="#"><img src="img/twitter.png" alt="Twitter"></a>
+										<a href="#"><img src="img/instagram.png" alt="Instagram"></a>
+										<a href="#"><img src="img/youtube.png" alt="Youtube"></a>
+									</div>
+								</div>
+								<div class="footer-bottom">
+									<p>&copy; 2024 Zomato. All Rights Reserved.</p>
+								</div>
+							</div>
+						</div>
+				</main6>		
+</body>
+</html>
+
